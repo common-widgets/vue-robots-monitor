@@ -5,7 +5,7 @@ module.exports = {
   plugins: [vue()],
   resolve: {
     alias: {
-      "vue-movable-v3": path.resolve(__dirname, "./dist"),
+      "vue-robots-monitor": path.resolve(__dirname, "./dist"),
     }
   },
   build: {
@@ -13,7 +13,7 @@ module.exports = {
     cssCodeSplit: false,
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'VueMovable',
+      name: 'VueRobotsMonitor',
       formats: ['es','cjs','umd', 'iife']
     },
     rollupOptions: {

@@ -12,7 +12,7 @@ const props = defineProps(["data"])
 const id = "path" + (Math.random() * 1000000000).toString(16).split(".")[0]
 
 const line = computed(() => {
-  return `M ${props.data.x} ${props.data.y} L ${props.data.cx} ${props.data.cy}`
+  return `M ${props.data.sp.x} ${props.data.sp.y} L ${props.data.dp.x} ${props.data.dp.y}`
 })
 </script>
 

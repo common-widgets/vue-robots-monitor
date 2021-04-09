@@ -1,9 +1,9 @@
 {
-  "name": "vue-movable-v3",
+  "name": "vue-robots-monitor",
   "version": "0.0.1",
-  "source": "src/components/movable/index.ts",
-  "main": "dist/vue-movable-v3.umd.js",
-  "module": "dist/vue-movable-v3.es.js",
+  "source": "src/index.ts",
+  "main": "dist/vue-robots-monitor.umd.js",
+  "module": "dist/vue-robots-monitor.es.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
