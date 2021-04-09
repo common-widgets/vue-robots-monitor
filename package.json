@@ -1,6 +1,6 @@
 {
   "name": "vue-robots-monitor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "source": "src/index.ts",
   "main": "dist/vue-robots-monitor.umd.js",
   "module": "dist/vue-robots-monitor.es.js",

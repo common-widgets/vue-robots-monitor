@@ -20,15 +20,23 @@ import PathNode from "./Path.vue"
 import RobotNode from "./Robot.vue"
 import * as MonitorProps from "./monitor-props"
 
-import { defineProps, ref } from "vue"
+import { computed, defineProps } from "vue"
 const props = defineProps({
   data: Object as () => MonitorProps.MonitorData
 })
 
-ref: paths = props.data.paths.map((p) => {
-  p.sp = props.data.points.find(r => r.id === p.srcPoint)
-  p.dp = props.data.points.find(r => r.id === p.distPoint)
-  return p
+const paths = computed(() => {
+  const paths = []
+  props.data.paths?.forEach((p) => {
+    const sp = props.data.points?.find(r => r.id === p.srcPoint)
+    const dp = props.data.points?.find(r => r.id === p.distPoint)
+    if (!sp || !dp) return
+    if (sp === dp) return
+    p.sp = sp
+    p.dp = dp
+    return paths.push({ ...p })
+  })
+  return paths
 })
 
 </script>

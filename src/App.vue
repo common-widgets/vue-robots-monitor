@@ -15,6 +15,8 @@ ref: data = {
   paths: [
     { srcPoint: "1", distPoint: "2" },
     { srcPoint: "2", distPoint: "1" },
+    { srcPoint: "2", distPoint: "2" },
+    { srcPoint: "2", distPoint: "5" },
   ],
   robots: [
     { x: 120, y: 454, size: 20 },
