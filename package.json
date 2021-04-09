@@ -1,6 +1,6 @@
 {
   "name": "vue-robots-monitor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "source": "src/index.ts",
   "main": "dist/vue-robots-monitor.umd.js",
   "module": "dist/vue-robots-monitor.es.js",
@@ -27,6 +27,7 @@
     "typescript": "^4.1.3",
     "vite": "^2.0.5"
   },
+  "types": "index.d.ts",
   "description": "Movable box based on vue 3",
   "author": "",
   "license": "ISC"
